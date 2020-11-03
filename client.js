@@ -21,7 +21,26 @@ const connect = function() {
   conn.on('connect', () => {
     conn.write('Name: RAJ');
   });
+  /*
+  conn.on('connect', () => {
+    setInterval(() => {
+      conn.write('Move: up');}, 50);
+    
+  });
+  */
+  /*
+  conn.on('connect', () => {
+    conn.write('Move: left');
+  });
 
+  conn.on('connect', () => {
+    conn.write('Move: down');
+  });
+
+  conn.on('connect', () => {
+    conn.write('Move: right');
+  });
+*/
   conn.on('data', (data) => {
     console.log('Server says: ', data);
   });
